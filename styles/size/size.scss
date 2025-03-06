@@ -13,6 +13,6 @@ $space-100: 0.5rem; // 8px
 $space-50: 0.25rem; // 4px
 
 // use this to convert pixel values to rem in output
-@function space($num){
+@function pixelToRem($num){
   @return #{calc($num / 16)}rem;
 } 
