@@ -12,20 +12,51 @@ body {
   font-weight: $black;
 }
 
-// following specific font sizes are per design spec
-// 1rem = 16px
-@mixin text-preset-1() {
-  font-size: size.pixelToRem(64); // 64px
+
+/*
+  - following specific font sizes are per design spec 
+  - 1rem = 16px 
+  - default font size is for mobile screens
+*/
+
+@mixin text-preset-1($screen-type) {
+  font-size: size.pixelToRem(40);
+
+  @if $screen-type == tablet {
+    font-size: size.pixelToRem(48);
+  }
+
+  @if $screen-type == desktop {
+    font-size: size.pixelToRem(64);
+  }
+
   line-height: 1.1;
 }
 
 @mixin text-preset-2() {
-  font-size: size.pixelToRem(40); // 40px
+  font-size: size.pixelToRem(32);
+
+  @if $screen-type == tablet {
+    font-size: size.pixelToRem(36);
+  }
+
+  @if $screen-type == desktop {
+    font-size: size.pixelToRem(40);
+  }
+
   line-height: 1.1;
 }
 
 @mixin text-preset-3() {
-  font-size: size.pixelToRem(16);  // 16px
+  font-size: size.pixelToRem(12);
+
+  @if $screen-type == tablet {
+    font-size: size.pixelToRem(14);
+  }
+
+  @if $screen-type == desktop {
+    font-size: size.pixelToRem(16);
+  }
   line-height: 1.1;
 
 }
@@ -33,7 +64,7 @@ body {
 @mixin text-preset-4() {
   font-size: size.pixelToRem(18); // 18px
   font-weight: $medium;
-  line-height: 1.1;
+  line-height: 1.1; 
 
 }
 
