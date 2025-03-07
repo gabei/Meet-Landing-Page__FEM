@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+/* 
+CSS reset derived from Josh Comeau's defaults
+found here : https://www.joshwcomeau.com/css/custom-css-reset/ 
+*/
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+}
+
+/*
+  - following specific font sizes are per design spec 
+  - 1rem = 16px 
+  - default font size is for mobile screens
+*/
+body {
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.call-to-action__download {
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 3rem;
+  padding: 1rem;
+  background-color: #4D96A9;
+  color: #FAFAFA;
+}
+.call-to-action__download .version {
+  color: #8FE3F9;
+}
+.call-to-action__info {
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 3rem;
+  padding: 1rem;
+  background-color: #855FB1;
+  color: #FAFAFA;
+}
+.modern-use__tag {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.experience__download {
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 3rem;
+  padding: 1rem;
+  background-color: #855FB1;
+  color: #FAFAFA;
+}
+.experience__download .version {
+  color: #D9B8FF;
+}
+
+/*# sourceMappingURL=style.css.map */

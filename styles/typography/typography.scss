@@ -19,7 +19,7 @@ body {
   - default font size is for mobile screens
 */
 
-@mixin text-preset-1($screen-type) {
+@mixin text-preset-1($screen-type: mobile) {
   font-size: size.pixelToRem(40);
 
   @if $screen-type == tablet {

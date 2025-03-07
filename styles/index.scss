@@ -5,21 +5,49 @@
 @use './typography/typography' as type;
 
 body {
-
+  min-height: 100vh;
 }
 
 header {
 
 }
 
-.call-to-action {
+main {
+  display: flex;
+  flex-direction: column;
+}
 
+h1 {
+  @include type.text-preset-1;
+}
+
+h2 {
+  @include type.text-preset-5;
+}
+
+p {
+  @include type.text-preset-4;
+}
+
+.call-to-action {
+  &__download {
+    @include color.action-button(color.$cyan-600, color.$cyan-300);
+  }
+
+  &__info {
+    @include color.action-button(color.$purple-600);
+  }
 }
 
 .modern-use {
-
+  &__tag {
+    @include type.text-preset-5;
+  }
 }
 
-.experience-more {
+.experience {
+  &__download {
+    @include color.action-button(color.$purple-600, color.$purple-300);
+  }
   
 }
