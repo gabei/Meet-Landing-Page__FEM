@@ -21,6 +21,7 @@ body {
 
 @mixin text-preset-1($screen-type: mobile) {
   font-size: size.pixelToRem(40);
+  font-weight: 900;
 
   @if $screen-type == tablet {
     font-size: size.pixelToRem(48);

@@ -48,9 +48,22 @@ body {
   min-height: 100vh;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   font-size: 2.5rem;
+  font-weight: 900;
   line-height: 1.1;
+  color: #28283D;
 }
 
 h2 {
@@ -64,6 +77,19 @@ p {
   line-height: 1.1;
 }
 
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.call-to-action p {
+  color: #87879D;
+}
+.call-to-action > *:not(.call-to-action__image) {
+  padding: 0rem 2rem;
+}
 .call-to-action__download {
   font-size: 1rem;
   line-height: 1.5;

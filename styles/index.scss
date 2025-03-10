@@ -21,6 +21,7 @@ main {
 
 h1 {
   @include type.text-preset-1;
+  color: color.$slate-900;
 }
 
 h2 {
@@ -32,6 +33,21 @@ p {
 }
 
 .call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+
+  & p {
+    color: color.$slate-600;
+  }
+  
+
+  & > *:not(.call-to-action__image) {
+    padding: 0rem 2rem;
+  } 
+
   &__download {
     @include color.action-button(color.$cyan-600, color.$cyan-300);
   }
