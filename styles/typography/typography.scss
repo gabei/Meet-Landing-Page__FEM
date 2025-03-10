@@ -34,7 +34,7 @@ body {
   line-height: 1.1;
 }
 
-@mixin text-preset-2() {
+@mixin text-preset-2($screen-type: mobile) {
   font-size: size.pixelToRem(32);
 
   @if $screen-type == tablet {
@@ -48,7 +48,7 @@ body {
   line-height: 1.1;
 }
 
-@mixin text-preset-3() {
+@mixin text-preset-3($screen-type: mobile) {
   font-size: size.pixelToRem(12);
 
   @if $screen-type == tablet {
