@@ -82,12 +82,18 @@ p {
     }
   }
 
-
-
-
   &__tag {
     color: color.$cyan-600;
     @include type.text-preset-3;
+  }
+
+  & h2 {
+    color: color.$slate-900;
+    @include type.text-preset-2;
+  }
+
+  & p {
+    color: color.$slate-600;
   }
 }
 
