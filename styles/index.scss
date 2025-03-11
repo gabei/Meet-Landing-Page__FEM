@@ -98,6 +98,13 @@ p {
 }
 
 .experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: color.$cyan-600;
+  color: color.$white;
+
   &__download {
     @include color.action-button(color.$purple-600, color.$purple-300);
   }

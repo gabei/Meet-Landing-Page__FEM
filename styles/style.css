@@ -146,6 +146,14 @@ p {
   color: #87879D;
 }
 
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #4D96A9;
+  color: #FAFAFA;
+}
 .experience__download {
   font-size: 1rem;
   line-height: 1.5;
