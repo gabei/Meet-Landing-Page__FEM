@@ -115,6 +115,7 @@ p {
   color: #FAFAFA;
 }
 .modern-use {
+  position: relative;
   padding: 2rem;
   text-align: center;
   display: flex;
@@ -148,6 +149,7 @@ p {
 }
 
 .experience {
+  position: relative;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -179,13 +181,13 @@ p {
 .banner {
   font-size: 1rem;
   line-height: 1.5;
+  position: absolute;
+  top: -1.8rem;
+  background-color: #FAFAFA;
   color: #87879D;
-  padding: 0.75rem;
+  padding: 1rem;
   border: 1px solid #D1D1DF;
   border-radius: 50%;
-}
-.banner--light {
-  color: #FAFAFA;
 }
 
 /*# sourceMappingURL=style.css.map */
