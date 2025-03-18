@@ -65,10 +65,27 @@ h1 {
   line-height: 1.1;
   color: #28283D;
 }
+@media screen and (min-width: 640px) {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    font-size: 3rem;
+  }
+}
 
 h2 {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+@media screen and (min-width: 640px) {
+  h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.1;
+    font-size: 2.25rem;
+  }
 }
 
 p {
@@ -147,6 +164,7 @@ p {
 @media screen and (min-width: 640px) {
   .modern-use__gallery {
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
   }
 }
 .modern-use__gallery-image {
@@ -157,11 +175,15 @@ p {
   font-size: 0.75rem;
   line-height: 1.1;
 }
+@media screen and (min-width: 640px) {
+  .modern-use__tag {
+    font-size: 0.75rem;
+    line-height: 1.1;
+    font-size: 0.875rem;
+  }
+}
 .modern-use h2 {
   color: #28283D;
-  font-size: 2rem;
-  font-weight: 900;
-  line-height: 1.1;
 }
 .modern-use p {
   color: #87879D;
@@ -179,11 +201,6 @@ p {
   background-color: #4D96A9;
   background-image: linear-gradient(to bottom, rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url("../assets/mobile/image-footer.jpg");
   color: #FAFAFA;
-}
-.experience h2 {
-  font-size: 2rem;
-  font-weight: 900;
-  line-height: 1.1;
 }
 .experience__download {
   font-size: 1rem;

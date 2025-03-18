@@ -22,10 +22,18 @@ main {
 h1 {
   @include type.text-preset-1;
   color: color.$slate-900;
+
+  @include adjust.tablet {
+    @include type.text-preset-1(tablet);
+  }
 }
 
 h2 {
-  @include type.text-preset-5;
+  @include type.text-preset-2;
+
+  @include adjust.tablet {
+    @include type.text-preset-2(tablet);
+  }
 }
 
 p {
@@ -95,6 +103,7 @@ p {
 
     @include adjust.tablet {
       grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
     }
 
     &-image {
@@ -105,11 +114,14 @@ p {
   &__tag {
     color: color.$cyan-600;
     @include type.text-preset-3;
+
+    @include adjust.tablet {
+      @include type.text-preset-3(tablet);
+    }
   }
 
   & h2 {
     color: color.$slate-900;
-    @include type.text-preset-2;
   }
 
   & p {
@@ -131,10 +143,6 @@ p {
     linear-gradient(to bottom, rgba(color.$cyan-600, 0.90), rgba(color.$cyan-600, 0.90)),
     url('../assets/mobile/image-footer.jpg'); 
   color: color.$white;
-
-  & h2 {
-    @include type.text-preset-2;
-  }
 
   &__download {
     @include color.action-button(color.$purple-600, color.$purple-300);
