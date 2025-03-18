@@ -42,10 +42,15 @@ p {
 
 .button {
   text-decoration: none;
+  padding: 1rem;
 
   &:hover {
     filter: brightness(115%);
   cursor: pointer;
+  }
+
+  @include adjust.tablet {
+    padding: 1rem 2rem;
   }
 }
 
