@@ -77,6 +77,11 @@ p {
   line-height: 1.5;
 }
 
+.button:hover {
+  filter: brightness(115%);
+  cursor: pointer;
+}
+
 .call-to-action {
   padding: 4rem 0rem;
   display: flex;

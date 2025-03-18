@@ -32,6 +32,11 @@ p {
   @include type.text-preset-4;
 }
 
+.button:hover {
+  filter: brightness(115%);
+  cursor: pointer;
+}
+
 .call-to-action {
   padding: 4rem 0rem;
   display: flex;
