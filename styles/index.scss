@@ -22,18 +22,10 @@ main {
 h1 {
   @include type.text-preset-1;
   color: color.$slate-900;
-
-  @include adjust.tablet {
-    @include type.text-preset-1(tablet);
-  }
 }
 
 h2 {
   @include type.text-preset-2;
-
-  @include adjust.tablet {
-    @include type.text-preset-2(tablet);
-  }
 }
 
 p {
@@ -119,10 +111,6 @@ p {
   &__tag {
     color: color.$cyan-600;
     @include type.text-preset-3;
-
-    @include adjust.tablet {
-      @include type.text-preset-3(tablet);
-    }
   }
 
   & h2 {
