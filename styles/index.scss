@@ -22,13 +22,16 @@ main {
 h1 {
   color: color.$slate-900;
   @include type.text-preset-1;
+  
 }
 
 h2 {
+  max-width: 60ch;
   @include type.text-preset-2;
 }
 
 p {
+  max-width: 60ch;
   @include type.text-preset-4;
 }
 
