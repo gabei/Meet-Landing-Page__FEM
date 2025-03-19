@@ -60,10 +60,10 @@ main {
 }
 
 h1 {
+  color: #28283D;
   font-size: 2.5rem;
   font-weight: 900;
   line-height: 1.1;
-  color: #28283D;
 }
 @media screen and (min-width: 640px) {
   h1 {
@@ -100,16 +100,11 @@ p {
 
 .button {
   text-decoration: none;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 .button:hover {
   filter: brightness(115%);
   cursor: pointer;
-}
-@media screen and (min-width: 640px) {
-  .button {
-    padding: 1rem 2rem;
-  }
 }
 
 .call-to-action {
@@ -180,6 +175,8 @@ p {
 }
 .modern-use__tag {
   color: #4D96A9;
+  text-transform: uppercase;
+  letter-spacing: 4px;
   font-size: 0.75rem;
   line-height: 1.1;
 }

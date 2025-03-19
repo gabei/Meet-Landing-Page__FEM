@@ -20,8 +20,8 @@ main {
 }
 
 h1 {
-  @include type.text-preset-1;
   color: color.$slate-900;
+  @include type.text-preset-1;
 }
 
 h2 {
@@ -34,16 +34,13 @@ p {
 
 .button {
   text-decoration: none;
-  padding: 1rem;
+  padding: 1rem 2rem;
 
   &:hover {
     filter: brightness(115%);
   cursor: pointer;
   }
 
-  @include adjust.tablet {
-    padding: 1rem 2rem;
-  }
 }
 
 .call-to-action {
@@ -83,7 +80,6 @@ p {
 }
 
 .modern-use {
-  position: relative;
   padding: 4rem 2rem;
   text-align: center;
   display: flex;
@@ -110,7 +106,9 @@ p {
 
   &__tag {
     color: color.$cyan-600;
-    @include type.text-preset-3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    @include type.text-preset-3; 
   }
 
   & h2 {
