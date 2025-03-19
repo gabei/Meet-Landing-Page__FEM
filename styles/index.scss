@@ -41,7 +41,7 @@ p {
 
   &:hover {
     filter: brightness(115%);
-  cursor: pointer;
+    cursor: pointer;
   }
 
 }
@@ -67,6 +67,7 @@ p {
       display: none;
       @include adjust.desktop {
         display: block;
+        padding: 0rem;
       }
 
       &--left {
@@ -86,6 +87,7 @@ p {
   &__text {
     display: grid;
     gap: 2rem;
+    padding: 0rem 2rem;
 
     @include adjust.desktop {
       grid-column: 2 / span 1;
@@ -104,10 +106,6 @@ p {
     }
   }
   }
-
-  & > *:not(.call-to-action__image) {
-    padding: 0rem 2rem;
-  } 
 
   &__download {
     @include color.action-button(color.$cyan-600, color.$cyan-300);
@@ -169,7 +167,7 @@ p {
   padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
   text-align: center;
   background-size: cover;
@@ -179,8 +177,31 @@ p {
     url('../assets/mobile/image-footer.jpg'); 
   color: color.$white;
 
+  @include adjust.desktop {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 8rem;
+    align-items: center;
+    text-align: start;
+  }
+
+  & h2 {
+    @include adjust.desktop {
+      grid-column: 1 / span 4;
+    }
+  }
+
+  & p {
+    @include adjust.desktop {
+      grid-column: 5 / span 4;
+    }
+  }
+
   &__download {
     @include color.action-button(color.$purple-600, color.$purple-300);
+    @include adjust.desktop {
+      grid-column: 10 / span 3;
+    }
   }
   
 }
