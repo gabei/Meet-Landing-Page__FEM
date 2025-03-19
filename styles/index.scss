@@ -90,6 +90,10 @@ p {
   gap: 1rem;
   align-items: center;
 
+  @include adjust.desktop {
+    padding: 4rem 8rem;
+  }
+
   &__gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;

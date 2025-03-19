@@ -158,6 +158,11 @@ p {
   gap: 1rem;
   align-items: center;
 }
+@media screen and (min-width: 1280px) {
+  .modern-use {
+    padding: 4rem 8rem;
+  }
+}
 .modern-use__gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
