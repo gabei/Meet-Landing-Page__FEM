@@ -117,6 +117,22 @@ p {
   gap: 1.5rem;
   text-align: center;
 }
+.call-to-action__image {
+  display: block;
+}
+@media screen and (min-width: 1280px) {
+  .call-to-action__image {
+    display: none;
+  }
+}
+.call-to-action__image-desktop {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .call-to-action__image-desktop {
+    display: block;
+  }
+}
 .call-to-action p {
   color: #87879D;
 }

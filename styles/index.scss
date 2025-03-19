@@ -54,6 +54,20 @@ p {
   gap: 1.5rem;
   text-align: center;
 
+  &__image {
+    display: block;
+    @include adjust.desktop {
+      display: none;
+    }
+
+    &-desktop {
+      display: none;
+      @include adjust.desktop {
+        display: block;
+      }
+    }
+  }
+
   & p {
     color: color.$slate-600;
   }
