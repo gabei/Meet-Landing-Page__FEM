@@ -29,28 +29,27 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./images/site-snapshot.png" alt="Site preview">
+<img src="./assets/snapshot.png" alt="Site preview">
 
 ### Links
 
-- <a href="https://github.com/gabei/Product-Preview__FEM">View code here.</a>
-- <a href="https://gabei.github.io/Product-Preview__FEM/" target="_blank">View live site on GitHub Pages</a>
+- <a href="https://github.com/gabei/Meet-Landing-Page__FEM">View code here.</a>
+- <a href="https://gabei.github.io/Meet-Landing-Page__FEM/" target="_blank">View live site on GitHub Pages</a>
 
 ## My process
 
 ### Built with
 - Semantic HTML5 markup
 - CSS custom properties
+- Grid
 - Flexbox
 - Mobile-first workflow
-- Javascript DOM Manipulation 
-
 
 ### What I learned
-I learned how to use the `<picture>` element to supply various image sources for an `<img>` tag. I also learned a bit about triggering CSS animations.
+I played around with different ways of nesting styles using SCSS includes and mixins. I'm still trying to determine how I like to organize my styles so that they are easier to look at. They certainly still need to be refactored a bit.
 
 ### Continued development
-I'm excited about implementing more CSS animations in future projects. I think they are the icing on the user experience cake, and really do a lot to emphasize the actions that the user is taking in real time.
+I'm interested in learning how to simplify grid layouts. I feel that I am too hands on with how to make things wrap in particular ways, rather than creating a flexible layout from the start.
 
 ### Useful resources
 <a href="https://www.photopea.com/" target="_blank">
@@ -59,9 +58,5 @@ I'm excited about implementing more CSS animations in future projects. I think t
 - <a href="https://feathericons.com/" target="_blank">Feather Icons</a> - Easy to use icons for front end devlopment.
 
 ## Author
-
 - Frontend Mentor - <a href="https://www.frontendmentor.io/profile/gabei" target="_blank">@gabei</a>
 - Github - <a href="(https://www.github.com/gabei" target="_blank">@gabei</a>
-
-## Acknowledgments
-Background Photo by <a href="https://www.pexels.com/photo/close-up-photo-of-green-leafed-plant-1407305/" target="_blank">Aditya Aiyar</a>
